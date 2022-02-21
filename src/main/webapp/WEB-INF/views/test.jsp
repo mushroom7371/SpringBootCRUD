@@ -16,9 +16,10 @@
     <title>Test</title>
 </head>
 <body>
-    <h1>인텔리제이 스프링부트 test</h1>
     <div id="index">
+        <h1>인텔리제이 스프링부트 test</h1>
         <form name = 'frm_index', id="frm_index", method="post" action="">
+            <input type="button" value="조회" id="btnSearchGo">
             <input type="button" value="입력" id="btnInsertGo">
         </form>
     </div>

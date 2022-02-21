@@ -2,7 +2,7 @@
   Created by IntelliJ IDEA.
   User: pjh
   Date: 2022-02-21
-  Time: 오후 1:53
+  Time: 오후 4:00
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
@@ -18,23 +18,18 @@
     }
 </style>
 <head>
-    <title>저장 페이지</title>
+    <title>조회 페이지</title>
 </head>
 <body>
-    <h1>저장 페이지 입니다.</h1>
+    <h1>조회 페이지 입니다.</h1>
     <div id="index">
-        <form id="frm_insert" name="frm_index" method="post" action="">
-            <label>이름</label>
-            <input type="text" id="Sname"/>
-            <br/>
-            <label>전화번호</label>
-            <input type="text" id="Sphone"/>
-            <br/>
-            <label>부서</label>
-            <input type="text" id="Sdepartment"/>
-            <br/>
-            <input type="button" id="btnInsert" value="저장하기"/>
-            <input type="button" id="btnGoHome" value="취소"/>
+        <form id="frm_search" name="frm_search" method="post" action="">
+            <div class='title'>
+                <span class='seq'>번호</span>
+                <span class='sName'>이름</span>
+                <span class='sPhone'>전화번호</span>
+                <span class='sDepartment'>부서</span>
+            </div>
         </form>
     </div>
 </body>

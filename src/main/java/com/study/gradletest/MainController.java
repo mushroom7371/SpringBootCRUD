@@ -10,19 +10,21 @@ import org.springframework.web.servlet.ModelAndView;
 public class MainController {
 
     @RequestMapping("/")
-    public @ResponseBody String root() throws Exception{
-        return "Jsp in Gradle";
-    }
-
-    @RequestMapping("/test")
-    public String test1(){
+    public String root() throws Exception{
         return "test";
     }
 
     @RequestMapping(value = "insertGo", method = RequestMethod.GET)
     public ModelAndView insertGo(ModelAndView mav){
         mav.setViewName("insertGo");
-
         return mav;
     }
+
+    @RequestMapping(value = "searchGo", method = RequestMethod.GET)
+    public ModelAndView searchGo(ModelAndView mav){
+        mav.setViewName("searchGo");
+        return mav;
+    }
+
+
 }
