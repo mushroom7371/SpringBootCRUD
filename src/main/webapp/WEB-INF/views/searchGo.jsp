@@ -30,6 +30,22 @@
                 <span class='sPhone'>전화번호</span>
                 <span class='sDepartment'>부서</span>
             </div>
+
+            <hr/>
+
+            <div class='items'>
+                <c:forEach var='vo' items="${viewAll}">
+                    <div class='item' onclick="crud.view('${vo.sPhone}')">
+                        <span class='seq'>${vo.seq }</span>
+                        <span class='sName'>${vo.sName }</span>
+                        <span class='sPhone'>${vo.sPhone }</span>
+                        <span class='sAge'>${vo.sDepartment }</span>
+                    </div>
+                </c:forEach>
+            </div>
+
+            <input type="button" id="btnSearch" value="조회">
+
         </form>
     </div>
 </body>
