@@ -1,2 +1,0 @@
-# SpringBootCRUD
-intellij SpringBoot gradle
