@@ -1,0 +1,10 @@
+@charset "UTF-8";
+#board{
+    width:100%;
+    padding-right:10px;
+}
+#board>h1{
+    font-size:16pt;
+    margin-bottom:20px;
+    margin-top:20px;
+}
